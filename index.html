@@ -9,37 +9,80 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Icons -->
 </head>
 <body>
+    <header id="head-1">
+        <nav>
+            <img src="0ec1bf3e340c9e33489954c8f337469b.png" alt="" id="logo" style="margin-left: 20px;">
+            <input type="checkbox" name="" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+    
+                <a href="index.html" class="home-link">Home</a>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Blog</a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32" fill="#e8eaed"><path d="M120-160v-112q0-34 17.5-62.5T184-378q62-31 126-46.5T440-440q20 0 40 1.5t40 4.5q-4 58 21 109.5t73 84.5v80H120ZM760-40l-60-60v-186q-44-13-72-49.5T600-420q0-58 41-99t99-41q58 0 99 41t41 99q0 45-25.5 80T790-290l50 50-60 60 60 60-80 80ZM440-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm300 80q17 0 28.5-11.5T780-440q0-17-11.5-28.5T740-480q-17 0-28.5 11.5T700-440q0 17 11.5 28.5T740-400Z"/></svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Animated Code Section Background -->
+    <div class="code-background" id="code-background"></div>
+
+    <!-- Header Section -->
     <header>
-        <h1>Get in Touch</h1>
+        <h1 id="greeting"></h1> <!-- This will be dynamically updated -->
         <p>Feel free to contact me!</p>
     </header>
 
+    <!-- Contact Section -->
     <main>
-        <section class="contact-section">
+        <section class="contact-section" id="contact">
             <h2>Contact Information</h2>
 
             <div class="contact-info">
+                <!-- Email Box -->
                 <div class="email-box">
                     <i class="fas fa-envelope"></i>
                     <h3>Email Me</h3>
-                    <p><a href="arpangithub@gmail.com">arpangupta142005@gmail.com</a></p>
+                    <p><a href="mailto:arpangupta142005@gmail.com">arpangupta142005@gmail.com</a></p>
                 </div>
 
+                <!-- Social Media Links -->
                 <div class="social-media">
                     <h3>Follow Me</h3>
                     <div class="social-icons">
                         <a href="https://x.com/ArpanGupta_14" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.linkedin.com/in/arpan-gupta-117a40309" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
                         <a href="https://www.instagram.com/arpangupta.in?igsh=MXVmbTQ5Z3FrdXdmNQ==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61566548450738" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/arpangupta" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
+
+            <!-- Resume Button -->
+            <a href="resume.pdf" download class="resume-btn">Download Resume</a>
         </section>
     </main>
 
+    <!-- Floating Contact Buttons -->
+    <div class="floating-icons">
+        <a href="tel:9555081161" class="social-icon"><i class="fas fa-phone"></i></a>
+    </div>
+
+    <!-- Footer -->
     <footer>
         <p>© 2024 Arpan Gupta. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
 </body>
 </html>
