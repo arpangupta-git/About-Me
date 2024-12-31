@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const lines = [
         'std::string name = "Arpan Gupta";',
         'std::string greet() { return "Hello, welcome to my portfolio!"; }',
-        'std::vector<std::string> skills = {"JavaScript", "Python", "C++", "Web Development"};',
-        'std::vector<std::string> projects = {"Portfolio Website", "AI Chatbot", "Data Science Project"};',
-        'void contactMe() { std::cout << "Feel free to reach out!"; }',
-        'if (std::find(skills.begin(), skills.end(), "JavaScript") != skills.end()) { std::cout << "I love coding!"; }'
+        'std::vector<std::string> skills = {"C", "C++", "Python", "Web Development", "Java"};',
+        'if (std::count(skills.begin(), skills.end(), "Web Development")) std::cout << "I love coding!";',
+        'std::vector<std::string> projects = {"Sign Language Recognition", "Portfolio Page"};',
+        'void contactMe() { std::cout << "Feel free to reach out!"; }'
     ];
 
     let currentLine = 0;
